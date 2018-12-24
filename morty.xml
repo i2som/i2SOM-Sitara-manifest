@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+	<remote name="git.i2som" fetch="git://git.i2som.tech"/>
+	<remote name="yocto" fetch="git://git.yoctoproject.org"/>
+	<remote name="oe" fetch="git://git.openembedded.org"/>
+	<remote name="ti" fetch="git://git.ti.com"/>
+	<remote name="github" fetch="git://github.com"/>
+
+	<default revision="morty" remote="git.i2som" sync-j="8"/>
+
+	<project name="poky" remote="yocto" path="sources/poky"/>
+	<project name="meta-openembedded" remote="oe" path="sources/meta-openembedded"/>
+	<project name="meta-qt5/meta-qt5" remote="github" path="sources/meta-qt5"/>
+	<project name="imyller/meta-nodejs" remote="github" path="sources/meta-nodejs"/>
+	<project name="dv1/meta-gstreamer1.0" remote="github" path="sources/meta-gstreamer1.0"/>
+	<project name="meta-i2som-ti" path="sources/meta-i2som-ti"/>
+	<project name="meta-i2som-yocto" path="sources/meta-i2som-yocto">
+		<copyfile dest="tools/init" src="scripts/init"/>
+	</project>
+</manifest>
