@@ -14,8 +14,10 @@
 	<project name="meta-qt5/meta-qt5" remote="github" path="sources/meta-qt5"/>
 	<project name="imyller/meta-nodejs" remote="github" path="sources/meta-nodejs"/>
 	<project name="dv1/meta-gstreamer1.0" remote="github" path="sources/meta-gstreamer1.0"/>
-	<project name="meta-i2som-ti" path="sources/meta-i2som-ti"/>
-	<project name="meta-i2som-yocto" path="sources/meta-i2som-yocto">
-		<copyfile dest="tools/init" src="scripts/init"/>
+	<project name="meta-ti" remote="yocto" path="sources/meta-ti"/>
+	<project name="meta-i2som-ti" path="sources/meta-i2som-ti">
+		<copyfile dest="i2som-setup-project.sh" src="scripts/i2som-setup-project.sh"/>
+		<copyfile dest="setup-environment" src="scripts/setup-environment"/>
 	</project>
+	<project name="meta-i2som-yocto" path="sources/meta-i2som-yocto"/>
 </manifest>
