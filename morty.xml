@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-	<remote name="git.i2som" fetch="git://git.i2som.tech"/>
+	<remote name="i2som" fetch="git://github.com/i2som"/>
 	<remote name="yocto" fetch="git://git.yoctoproject.org"/>
 	<remote name="oe" fetch="git://git.openembedded.org"/>
 	<remote name="ti" fetch="git://git.ti.com"/>
 	<remote name="github" fetch="git://github.com"/>
 
-	<default revision="morty" remote="git.i2som" sync-j="8"/>
+	<default revision="morty" remote="i2som" sync-j="8"/>
 
 	<project name="poky" remote="yocto" path="sources/poky"/>
 	<project name="meta-openembedded" remote="oe" path="sources/meta-openembedded"/>
